@@ -2,7 +2,7 @@
 
 angular.module('myApp').controller('UserController', ['$scope', 'UserService', function($scope, UserService) {
     var self = this;
-    self.user={id:null,username:'',address:'',email:''};
+    self.user={id:1,username:'',address:'',email:''};
     self.users=[];
 
     self.submit = submit;
