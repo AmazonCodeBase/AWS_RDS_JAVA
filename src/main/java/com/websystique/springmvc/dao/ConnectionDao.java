@@ -13,7 +13,7 @@ public class ConnectionDao {
 	Connection con = null;
 	public Connection RetriveConnection() {
 	try {
-		Class.forName("com.mysql.jdbc.Driver");  
+		Class.forName("org.postgresql.Driver");  
 		con=DriverManager.getConnection(  
 		"jdbc:postgresql://java-application.cqgqd1oplv07.ap-south-1.rds.amazonaws.com:5432/test","postgres","javawebapp");
 		}catch(Exception e){ System.out.println(e);}
