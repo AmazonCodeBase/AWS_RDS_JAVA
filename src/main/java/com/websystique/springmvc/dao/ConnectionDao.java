@@ -15,7 +15,7 @@ public class ConnectionDao {
 	try {
 		Class.forName("com.mysql.jdbc.Driver");  
 		con=DriverManager.getConnection(  
-		"jdbc:pysql://java-application.cqgqd1oplv07.ap-south-1.rds.amazonaws.com:5432/user","postgres","javawebapp");
+		"jdbc:postgresql://java-application.cqgqd1oplv07.ap-south-1.rds.amazonaws.com:5432/postgres","postgres","javawebapp");
 		}catch(Exception e){ System.out.println(e);}
 	return con;  
 	}
