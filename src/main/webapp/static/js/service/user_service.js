@@ -2,7 +2,7 @@
 
 angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $q){
 
-    var REST_SERVICE_URI = 'http://localhost:8080/Spring4MVCAngularJSExample/user/';
+    var REST_SERVICE_URI = 'http://java-application.cqgqd1oplv07.ap-south-1.rds.amazonaws.com/Spring4MVCAngularJSExample/user/';
 
     var factory = {
         fetchAllUsers: fetchAllUsers,
