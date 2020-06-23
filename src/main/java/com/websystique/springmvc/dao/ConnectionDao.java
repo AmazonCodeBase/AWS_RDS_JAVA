@@ -12,11 +12,14 @@ import com.websystique.springmvc.model.User;
 public class ConnectionDao {
 	Connection con = null;
 	public Connection RetriveConnection() {
-	try {
-		Class.forName("com.mysql.jdbc.Driver");  
+	try { 
+		System.out.println("connection done");
+		Class.forName("org.postgresql.Driver");  
 		con=DriverManager.getConnection(  
-		"jdbc:mysql://awsrds.cuaofirbrh2o.us-west-2.rds.amazonaws.com:3306/user","username","password");
-		}catch(Exception e){ System.out.println(e);}
+		"jdbc:postgresql://java-application.cqgqd1oplv07.ap-south-1.rds.amazonaws.com:5432/test","post","javawebapp");
+		}catch(Exception e){
+		System.out.println("connection error");
+		System.out.println(e);}
 	return con;  
 	}
 	
